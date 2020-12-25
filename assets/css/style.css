@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62,5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #010203;
+  background-color: #f0f0f0;
+  min-height: 100vh; }
+
+.visibilityNone {
+  display: none; }
+
+.mainHeader {
+  width: 100%;
+  height: 10vh;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #e4e4e4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; }
+  .mainHeader__heading {
+    font-size: 1.5rem;
+    margin-left: 10rem;
+    font-weight: 600; }
+  .mainHeader__themeChange {
+    margin-right: 10rem;
+    font-size: 1.2rem;
+    border: 1px solid transparent;
+    background: none;
+    outline: none;
+    cursor: pointer; }
+    .mainHeader__themeChange:hover {
+      border-bottom: 1px solid #010203; }
+
+.themeIcon {
+  margin-right: .6rem; }
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  max-width: 100rem;
+  margin: 0 auto; }
+
+.parent-secondPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5rem;
+  max-width: 100rem;
+  margin: 5rem auto; }
+
+.firstPage {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0; }
+
+.flexContainer {
+  width: 100%;
+  height: 10vh;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem; }
+  .flexContainer__inputIcon {
+    margin-left: 10rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem #e4e4e4;
+    border: 1px solid #e4e4e4;
+    border-radius: .4rem;
+    background-color: white; }
+  .flexContainer__select {
+    margin-right: 10rem;
+    padding: 1.5rem 4rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem #e4e4e4;
+    border: 1px solid #e4e4e4;
+    border-radius: .4rem;
+    outline: none;
+    color: #8d8d8d;
+    font-size: 1.4rem;
+    cursor: pointer; }
+
+.lupa {
+  padding: 1rem 1rem 1rem;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: #8d8d8d;
+  font-size: 1.4rem; }
+
+.inputSearch {
+  padding: 2rem 1.5rem 1.5rem;
+  border: none;
+  outline: none;
+  color: #8d8d8d;
+  font-size: 1.4rem; }
+
+.parent {
+  margin-top: 5rem; }
+
+.card {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 1rem;
+  background-color: white;
+  cursor: pointer; }
+
+.image {
+  width: 100%;
+  height: 50%; }
+  .image__flag {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%; }
+
+.info-data {
+  width: 100%;
+  height: 50%; }
+  .info-data__list {
+    list-style-type: none;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 1.3rem; }
+
+.main {
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+.buttonBack {
+  margin-left: 10rem; }
+  .buttonBack__btnBack {
+    width: 15rem;
+    outline: none;
+    border: 1px solid #8d8d8d;
+    border-radius: .4rem;
+    padding: 1rem 0 1rem 0;
+    color: #8d8d8d;
+    background-color: transparent;
+    font-size: 1.6rem;
+    cursor: pointer; }
+    .buttonBack__btnBack:hover {
+      transform: scale(1.1);
+      transition: .3s;
+      box-shadow: 0rem 0rem 1rem 1rem #e4e4e4; }
+    .buttonBack__btnBack:active {
+      transform: scale(1);
+      transition: .1s; }
+
+.card-secondPage {
+  width: 45rem;
+  height: 30rem;
+  border-radius: .4rem; }
+  .card-secondPage__flag {
+    width: 100%;
+    height: 100%;
+    border-radius: .4rem; }
+
+.flexbox-secondpage {
+  display: flex;
+  flex-direction: column; }
+
+.countryName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  font-weight: bold; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem;
+    font-size: 1.2rem; }
+
+.surrounding {
+  font-size: 1.2rem;
+  font-weight: bold; }

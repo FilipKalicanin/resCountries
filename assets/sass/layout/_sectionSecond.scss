@@ -1,0 +1,73 @@
+.buttonBack {
+
+    margin-left: 10rem;
+
+    &__btnBack {
+        width: 15rem;
+        outline: none;
+        border: 1px solid $color-gray-text;
+        border-radius: .4rem;
+        padding: 1rem 0 1rem 0;
+        color: $color-gray-text;
+        background-color: transparent;
+        font-size: 1.6rem;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.1);
+            transition: .3s;
+            box-shadow: 0rem 0rem 1rem 1rem $color-underline-gray;
+        }
+        
+        &:active{
+            transform: scale(1);
+            transition: .1s;
+        }
+
+    }
+}
+
+.card-secondPage {
+    width: 45rem;
+    height: 30rem;
+    border-radius: .4rem;
+
+    &__flag{
+        width: 100%;
+        height: 100%;
+        border-radius: .4rem;
+    }
+}
+
+.flexbox-secondpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.countryName {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.list{
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    font-weight: bold;
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+        font-size: 1.2rem;
+    }
+
+}
+
+.surrounding {
+    font-size: 1.2rem;
+    font-weight: bold;
+}

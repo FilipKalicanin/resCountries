@@ -1,0 +1,98 @@
+.firstPage{
+    width: 100%;
+    height: 100%;
+    background-color: $color-white-light;
+}
+
+.flexContainer {
+
+    width: 100%;
+    height: 10vh;
+    background-color: $color-white-light;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+
+    &__inputIcon {
+        margin-left: 10rem;
+        box-shadow: 0rem 0rem .1rem .1rem $color-underline-gray;
+        border: 1px solid $color-underline-gray;
+        border-radius: .4rem;
+        background-color: white;   
+    }
+
+    &__select {
+        margin-right: 10rem;
+        padding: 1.5rem 4rem;
+        box-shadow: 0rem 0rem .1rem .1rem $color-underline-gray;
+        border: 1px solid $color-underline-gray;
+        border-radius: .4rem;
+        outline: none;
+        color: $color-gray-text;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+}
+
+.lupa {
+    padding: 1rem 1rem 1rem;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: $color-gray-text;
+    font-size: 1.4rem;
+}
+
+.inputSearch {
+    padding: 2rem 1.5rem 1.5rem;
+    border: none;
+    outline: none;
+    color: $color-gray-text;
+    font-size: 1.4rem;
+}
+
+// GRID ITEMS
+
+.parent {
+    margin-top: 5rem;
+}
+
+.card {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    height: 50%;
+
+    &__flag{
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.info-data {
+    width: 100%;
+    height: 50%;
+
+    &__list{
+        list-style-type: none;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        font-size: 1.3rem;
+
+    }
+}
+
+.main {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}

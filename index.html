@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <title>Countries</title>
+</head>
+
+<body>
+    <!-- Flex container Header ** same for both pages -->
+    <header class="mainHeader">
+        <!-- Flex items -->
+        <h2 class="mainHeader__heading">Where in the world?</h2>
+        <button class="mainHeader__themeChange" id="btn_themeChanger"><i class="far fa-moon themeIcon"></i></i>Dark
+            Mode</button>
+    </header>
+
+    <main>
+        <section class="firstPage" id="firstPage">
+            <!-- Flex container for search and select -->
+            <div class="flexContainer">
+
+                <div class="flexContainer__inputIcon">
+                    <i class="fas fa-search lupa"></i>
+                    <input class="inputSearch" placeholder="Search for a country..."></input>
+                </div>
+
+                <select class="flexContainer__select">
+                    <option class="option">Србија</option>
+                    <option>Србија</option>
+                    <option>Србија</option>
+                </select>
+            </div>
+            <!-- Grid for Country Display  //  Within grid there is flex for <img> and <ul> -->
+            <div class="parent" id="parent">
+                <div class="card" id='card'>
+                    <div class="image">
+                        <img src="assets/images/Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
+                    </div>
+                    <div class="info-data">
+                        <ul class="info-data__list">
+                            <li id="country" class="main">Srbija</li>
+                            <li>Population:</li>
+                            <li>Region:</li>
+                            <li>Capital:</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="image">
+                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
+                    </div>
+                    <div class="info-data">
+                        <ul class="info-data__list">
+                            <li id="country" class="main">Srbija</li>
+                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
+                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
+                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
+                    </div>
+                    <div class="info-data">
+                        <ul class="info-data__list">
+                            <li id="country" class="main">Srbija</li>
+                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
+                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
+                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
+                    </div>
+                    <div class="info-data">
+                        <ul class="info-data__list">
+                            <li id="country" class="main">Srbija</li>
+                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
+                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
+                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
+                    </div>
+                    <div class="info-data">
+                        <ul class="info-data__list">
+                            <li id="country" class="main">Srbija</li>
+                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
+                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
+                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
+                    </div>
+                    <div class="info-data">
+                        <ul class="info-data__list">
+                            <li id="country" class="main">Srbija</li>
+                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
+                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
+                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
+                    </div>
+                    <div class="info-data">
+                        <ul class="info-data__list">
+                            <li id="country" class="main">Srbija</li>
+                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
+                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
+                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
+                    </div>
+                    <div class="info-data">
+                        <ul class="info-data__list">
+                            <li id="country" class="main">Srbija</li>
+                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
+                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
+                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+        </section>
+
+        <section class="secondPage visibilityNone" id="secondPage">
+
+            <div class="flexContainer">
+                <div class="buttonBack">
+                    <button class="buttonBack__btnBack" id="btnBack"><i
+                            class="fas fa-long-arrow-alt-left"></i>Back</button>
+                </div>
+            </div>
+
+            <div class="parent-secondPage">
+                <div class="card-secondPage">
+                    <img src="assets/images/Home-Dark.jpg" alt="flag" class="card-secondPage__flag">
+                </div>
+                <div class="card-secondPage">
+                    <div class="flexbox-secondpage">
+                        <p class="countryName">Srbija</p>
+                        <ul class="list">
+                            <li class="list__item">Native name:</li>
+                            <li class="list__item">Population:</li>
+                            <li class="list__item">Region:</li>
+                            <li class="list__item">Sub Region:</li>
+                            <li class="list__item">Capital:</li>
+                            <li class="list__item">Top Level domain:</li>
+                            <li class="list__item">Currencies:</li>
+                            <li class="list__item">Languages:</li>
+                        </ul>
+                        <div class="surrounding">
+                            <p class="recommend__count">Border Countries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
+
+<!--
+    moon: <i class="fas fa-moon"></i>
+    lupa: <i class="fas fa-search"></i>
+    select-arrow: <i class="fas fa-angle-down"></i>
+    arrow-back: <i class="fas fa-long-arrow-alt-left"></i>
+-->

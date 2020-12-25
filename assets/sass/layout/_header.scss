@@ -1,0 +1,35 @@
+.mainHeader {
+    width: 100%;
+    height: 10vh;
+    background-color: $color-white-light;
+    border-bottom: 2px solid $color-underline-gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__heading{
+        font-size: 1.5rem;
+        margin-left: 10rem;
+        font-weight: 600;
+    }
+
+    &__themeChange{
+        margin-right: 10rem;
+        font-size: 1.2rem;
+        border: 1px solid transparent;
+        background: none;
+        outline: none;
+        cursor: pointer;
+
+        &:hover{
+            border-bottom: 1px solid $color-black-text;
+        }
+    }
+}
+
+.themeIcon {
+    margin-right: .6rem;
+}
