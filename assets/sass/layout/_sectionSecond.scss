@@ -67,7 +67,20 @@
 
 }
 
+
 .surrounding {
     font-size: 1.2rem;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.recommended {
+    font-size: 1rem;
+    color: $color-gray-text;
+    padding: .2rem .2rem;
+    margin: 0rem .4rem .4rem 0rem;
+    border: 1px solid $color-gray-text;
 }

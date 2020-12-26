@@ -31,18 +31,15 @@
 
                 <div class="flexContainer__inputIcon">
                     <i class="fas fa-search lupa"></i>
-                    <input class="inputSearch" placeholder="Search for a country..."></input>
+                    <input class="inputSearch" placeholder="Search for a country..." id="inputSearch"></input>
                 </div>
 
-                <select class="flexContainer__select">
-                    <option class="option">Србија</option>
-                    <option>Србија</option>
-                    <option>Србија</option>
+                <select class="flexContainer__select" id="selectRegion">
                 </select>
             </div>
             <!-- Grid for Country Display  //  Within grid there is flex for <img> and <ul> -->
             <div class="parent" id="parent">
-                <div class="card" id='card'>
+                <!-- <div class="card" id='card'>
                     <div class="image">
                         <img src="assets/images/Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
                     </div>
@@ -54,7 +51,7 @@
                             <li>Capital:</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="card">
                     <div class="image">
                         <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
@@ -145,8 +142,8 @@
                             <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
                         </ul>
                     </div>
-                </div>
-            </div> -->
+                </div>-->
+            </div>
 
         </section>
 
@@ -160,12 +157,16 @@
             </div>
 
             <div class="parent-secondPage">
-                <div class="card-secondPage">
-                    <img src="assets/images/Home-Dark.jpg" alt="flag" class="card-secondPage__flag">
+
+                <div class="card-secondPage" id="imgSecondPage">
+                <!-- <img src="assets/images/Home-Dark.jpg" alt="flag" class="card-secondPage__flag"> -->
                 </div>
-                <div class="card-secondPage">
-                    <div class="flexbox-secondpage">
-                        <p class="countryName">Srbija</p>
+
+                <div class="card-secondPage" id="info">
+
+                    <div class="flexbox-secondpage" id='dataSecondPage'>
+
+                        <!-- <p class="countryName">Srbija</p>
                         <ul class="list">
                             <li class="list__item">Native name:</li>
                             <li class="list__item">Population:</li>
@@ -177,10 +178,16 @@
                             <li class="list__item">Languages:</li>
                         </ul>
                         <div class="surrounding">
-                            <p class="recommend__count">Border Countries</p>
-                        </div>
+                            <p class="count">Border Countries:</p>
+                            <span class="recommended">Nesto</span>
+                            <span class="recommended">Nesto</span>
+                            <span class="recommended">Nesto</span>
+                            <span class="recommended">Nesto</span>
+                        </div> -->
+
                     </div>
                 </div>
+
             </div>
 
         </section>

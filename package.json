@@ -1,15 +1,15 @@
 {
   "name": "javascript",
   "version": "1.0.0",
-  "description": "Празан костур пројекта",
+  "description": "Kostur projekta",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css --w",
     "start": "webpack-dev-server",
     "build": "webpack"
   },
-  "author": "SVEA , ITBootcamp",
-  "license": "MIT",
+  "author": "ITBootcamp",
+  "license": ".",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
@@ -31,6 +31,7 @@
     "url": ""
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "copy-webpack-plugin": "^5.1.2",
     "node-sass": "^5.0.0"
   }
