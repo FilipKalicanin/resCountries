@@ -2,12 +2,18 @@ import { search } from './search';
 import { getAll } from './source';
 import { showSelected } from './select';
 import { seeMore } from './openDetailed';
+import { switchTheme } from './switchTheme';
 
 
 const pageOne = document.getElementById('firstPage'); //section One
 const pageTwo = document.getElementById('secondPage'); //section Two
 
 const btnBack = document.getElementById('btnBack');// btn Back (SectionTwo)
+
+const changeTheme = document.getElementById('btn_themeChanger');
+
+changeTheme.addEventListener('click', switchTheme);
+
 
 
 //switch visibilityNone class - toggle pages

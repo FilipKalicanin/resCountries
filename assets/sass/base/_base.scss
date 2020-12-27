@@ -1,3 +1,5 @@
+@import '../abstracts/mixins';
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,28 @@
 html {
     box-sizing: border-box;
     font-size: 62,5%;
+
+    @include respond(prva) {
+        font-size: 62,5%;
+    }
+    @include respond(druga) {
+        font-size: 60%;
+    }
+    @include respond(treca) {
+        font-size: 58%;
+    }
+    @include respond(cetvrta) {
+        font-size: 56%;
+    }
+    @include respond(peta) {
+        font-size: 54%;
+    }
+    @include respond(sesta) {
+        font-size: 52%;
+    }
+    @include respond(sedma) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -21,6 +45,11 @@ body {
     color: $color-black-text;
     background-color: $color-white-light;
     min-height: 100vh;
+}
+
+.bodyDark {
+    color: $color-white-text;
+    background-color: $color-background-dark-dark;
 }
 
 .visibilityNone {

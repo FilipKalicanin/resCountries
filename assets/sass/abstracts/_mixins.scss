@@ -6,3 +6,33 @@
     }
 }
 
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == 'sedma' {
+        @media (max-width: 5em) { @content }; //400px / 16
+    }
+
+    @if $breakpoint == 'sesta' {
+        @media (max-width: 10em) { @content }; //600px / 16
+    }
+
+    @if $breakpoint == 'peta' {
+        @media (max-width: 30em) { @content }; //838px / 16
+    }
+
+    @if $breakpoint == 'cetvrta' {
+        @media (max-width: 50em) { @content }; //900px / 16
+    }
+
+    @if $breakpoint == 'treca' { 
+        @media (max-width: 70em) { @content }; //950px / 16
+    }
+
+    @if $breakpoint == 'druga' {
+        @media (max-width: 90em) { @content }; //1200px / 16
+    }
+
+    @if $breakpoint == 'prva' {
+        @media (min-width: 112.5em) { @content }; //1800px / 16
+    }
+}

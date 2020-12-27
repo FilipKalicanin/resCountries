@@ -2,17 +2,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 4rem;
-    grid-row-gap: 4rem;
-    max-width: 100rem;
-    margin: 0 auto
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    width: 100%;
 }
 
 .parent-secondPage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 5rem;
-    max-width: 100rem;
+    grid-column-gap: 4rem;
+    width: 82%;
     margin: 5rem auto;
 }

@@ -17,7 +17,7 @@
 
 <body>
     <!-- Flex container Header ** same for both pages -->
-    <header class="mainHeader">
+    <header class="mainHeader" id="mainHeader">
         <!-- Flex items -->
         <h2 class="mainHeader__heading">Where in the world?</h2>
         <button class="mainHeader__themeChange" id="btn_themeChanger"><i class="far fa-moon themeIcon"></i></i>Dark
@@ -27,14 +27,15 @@
     <main>
         <section class="firstPage" id="firstPage">
             <!-- Flex container for search and select -->
-            <div class="flexContainer">
+            <div class="flexContainer" id="changeColor">
 
-                <div class="flexContainer__inputIcon">
-                    <i class="fas fa-search lupa"></i>
-                    <input class="inputSearch" placeholder="Search for a country..." id="inputSearch"></input>
+                <div class="flexContainer__inputIcon" id="promenaBoje">
+                    <i class="fas fa-search"></i>
+                    <input class="inputSearch" placeholder="Search for a country..." id="inputSearch" ></input>
                 </div>
 
                 <select class="flexContainer__select" id="selectRegion">
+                    <option value="" disabled selected>Select continent</option>
                 </select>
             </div>
             <!-- Grid for Country Display  //  Within grid there is flex for <img> and <ul> -->
@@ -52,97 +53,6 @@
                         </ul>
                     </div>
                 </div> -->
-                <!-- <div class="card">
-                    <div class="image">
-                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
-                    </div>
-                    <div class="info-data">
-                        <ul class="info-data__list">
-                            <li id="country" class="main">Srbija</li>
-                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
-                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
-                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
-                    </div>
-                    <div class="info-data">
-                        <ul class="info-data__list">
-                            <li id="country" class="main">Srbija</li>
-                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
-                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
-                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
-                    </div>
-                    <div class="info-data">
-                        <ul class="info-data__list">
-                            <li id="country" class="main">Srbija</li>
-                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
-                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
-                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
-                    </div>
-                    <div class="info-data">
-                        <ul class="info-data__list">
-                            <li id="country" class="main">Srbija</li>
-                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
-                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
-                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
-                    </div>
-                    <div class="info-data">
-                        <ul class="info-data__list">
-                            <li id="country" class="main">Srbija</li>
-                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
-                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
-                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
-                    </div>
-                    <div class="info-data">
-                        <ul class="info-data__list">
-                            <li id="country" class="main">Srbija</li>
-                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
-                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
-                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="Home-Dark.jpg" alt="contry flag" class="image__flag" id="flag">
-                    </div>
-                    <div class="info-data">
-                        <ul class="info-data__list">
-                            <li id="country" class="main">Srbija</li>
-                            <li>Population:&nbsp;<span id="population">10.000.000</span></li>
-                            <li>Region:&nbsp;<span id="region">East Europe</span></li>
-                            <li>Capital:&nbsp;<span id="capital">Belgrade</span></li>
-                        </ul>
-                    </div>
-                </div>-->
             </div>
 
         </section>
@@ -151,43 +61,38 @@
 
             <div class="flexContainer">
                 <div class="buttonBack">
-                    <button class="buttonBack__btnBack" id="btnBack"><i
-                            class="fas fa-long-arrow-alt-left"></i>Back</button>
+                    <button class="buttonBack__btnBack" id="btnBack"><i class="fas fa-long-arrow-alt-left"></i>Back</button>
                 </div>
             </div>
 
             <div class="parent-secondPage">
 
-                <div class="card-secondPage" id="imgSecondPage">
-                <!-- <img src="assets/images/Home-Dark.jpg" alt="flag" class="card-secondPage__flag"> -->
-                </div>
-
-                <div class="card-secondPage" id="info">
-
-                    <div class="flexbox-secondpage" id='dataSecondPage'>
-
-                        <!-- <p class="countryName">Srbija</p>
-                        <ul class="list">
-                            <li class="list__item">Native name:</li>
-                            <li class="list__item">Population:</li>
-                            <li class="list__item">Region:</li>
-                            <li class="list__item">Sub Region:</li>
-                            <li class="list__item">Capital:</li>
-                            <li class="list__item">Top Level domain:</li>
-                            <li class="list__item">Currencies:</li>
-                            <li class="list__item">Languages:</li>
-                        </ul>
-                        <div class="surrounding">
-                            <p class="count">Border Countries:</p>
-                            <span class="recommended">Nesto</span>
-                            <span class="recommended">Nesto</span>
-                            <span class="recommended">Nesto</span>
-                            <span class="recommended">Nesto</span>
-                        </div> -->
-
+                    <div class="card-secondPage" id="imgSecondPage">
+                    <!-- <img src="assets/images/Home-Dark.jpg" alt="flag" class="card-secondPage__flag"> -->
                     </div>
-                </div>
 
+                    <div class="card-secondPage" id="info">
+
+                        <div class="flexbox-secondpage" id='dataSecondPage'>
+
+                            <!-- <p class="countryName">Srbija</p>
+                            <ul class="list">
+                                <li class="list__item">Native name:</li>
+                                <li class="list__item">Population:</li>
+                                <li class="list__item">Region:</li>
+                                <li class="list__item">Sub Region:</li>
+                                <li class="list__item">Capital:</li>
+                                <li class="list__item">Top Level domain:</li>
+                                <li class="list__item">Currencies:</li>
+                                <li class="list__item">Languages:</li>
+                            </ul>
+                            <div class="surrounding">
+                                <p class="count">Border Countries:</p>
+                                <span class="recommended">Nesto</span>
+                            </div> -->
+
+                        </div>
+                    </div>
             </div>
 
         </section>
