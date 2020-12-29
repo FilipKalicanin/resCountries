@@ -6,6 +6,7 @@ const parent = document.getElementById('parent');
 
 let regioni = [];
 
+// Filled select with options (continents), used tmp to get rid of duplicates
 export const fillSelect = () => {
     getAll().then(res => {
         const filter = [];
@@ -13,13 +14,13 @@ export const fillSelect = () => {
             filter.push(el.region);
         })
         filter.sort();
-        let tmp = [ ...new Set(filter) ];
+        let tmp = [...new Set(filter)];
         regioni = tmp;
-        for(let i = 0; i < regioni.length; i++){
+        for (let i = 0; i < regioni.length; i++) {
             const option = document.createElement('option');
-            option.id='option';
+            option.id = 'option';
             option.value = regioni[i];
-            option.textContent= option.value;
+            option.textContent = option.value;
             selectRegion.appendChild(option);
         }
     })
@@ -27,24 +28,25 @@ export const fillSelect = () => {
 fillSelect();
 
 let temporarryArray = [];
-
+// Show all states from selected option (continent)
 export const showSelected = () => {
     selectRegion.addEventListener('change', (e) => {
-    
+
         parent.innerHTML = '';
 
         temporarryArray = [];
-
-        if(e.target.value === regioni[0]){
+        
+        // Show all
+        if (e.target.value === regioni[0]) {
             getAll().then(res => {
                 res.data.forEach(el => {
                     allStates.push(el)
-                })   
+                })
                 allStates.forEach(el => {
                     showData(el)
                 });
             })
-        }else{
+        } else { // Show selected only
             getRegion(e.target.value).then(res => {
                 res.data.forEach(el => {
                     temporarryArray.push(el)

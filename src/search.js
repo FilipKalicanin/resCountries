@@ -10,17 +10,17 @@ export const search = () => {
 
     getAll().then(res => {
 
-        for(let i = 0; i < res.data.length; i++){
+        for (let i = 0; i < res.data.length; i++) {
             niz.push(res.data[i]);
         }
 
         inputSearch.addEventListener('input', (e) => {
             e.preventDefault();
-    
+
             parent.innerHTML = '';
-    
+
             niz.forEach(el => {
-                if(el.name.toLowerCase().includes(e.target.value.toLowerCase())){
+                if (el.name.toLowerCase().includes(e.target.value.toLowerCase())) {
                     showData(el);
                 }
             })

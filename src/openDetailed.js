@@ -18,34 +18,19 @@ export const seeMore = (item) => {
 
 export const ispis = (el) => {
 
-    // let item = document.createElement('div');
-    // item.className = 'card-secondPage';
-    // item.id = 'imgSecondPage';
-
     let item_img_src = document.createElement('img');
     item_img_src.className = "card-secondPage__flag";
     item_img_src.id = 'flagsecond';
     item_img_src.src = el.flag;
     
-
-    // let item_data = document.createElement('div');
-    // item_data.className = 'card-secondPage';
-    // item_data.id='info'
-
-    // let item_data_all = document.createElement('div');
-    //     item_data_all.className = 'flexbox-secondpage';
-
-
     let countryName = document.createElement('p');
     countryName.className = "countryName";
     countryName.value = el.name;
     countryName.textContent = el.name;
     
-
     let list = document.createElement('ul');
     list.className = "list";
     
-
     let item_data_list_li = document.createElement('li');
     item_data_list_li.id= 'name';
     item_data_list_li.value = el.name;
