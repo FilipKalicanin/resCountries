@@ -7,6 +7,7 @@
     width: 100%;
 }
 
+
 .parent-secondPage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -14,4 +15,31 @@
     grid-column-gap: 4rem;
     width: 82%;
     margin: 5rem auto;
+    @include respond('1350') {
+        width: 80%;
+        margin: 3rem auto;;
+    }
+    @include respond(druga) {
+        width: 75%;
+        margin: 3rem auto;
+    }
+    @include respond('1100') {
+        width: 73%;
+        margin: 2.5rem auto;
+    }
+    @include respond(peta) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-row-gap: 1rem;
+        width: 67%;
+        margin: 5rem auto;
+    }
+    @include respond(sesta) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-row-gap: 1rem;
+        width: 65%;
+        margin: 3rem auto;
+    }
+
 }

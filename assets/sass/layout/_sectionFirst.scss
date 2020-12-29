@@ -1,3 +1,4 @@
+@import '../abstracts/mixins';
 .firstPage{
     width: 100%;
     height: 100%;
@@ -19,6 +20,25 @@
     align-items: center;
     margin-top: 5rem;
 
+    @include respond(cetvrta) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        // align-items: center;
+        margin-top: 4rem;
+        width: 100%;
+        height: 17vh;
+    }
+    @include respond(sedma) {
+        margin-top: 2rem;
+    }
+    @include respond(peta) {
+        margin-top: 1rem;
+    }
+    @include respond(deseta) {
+        height: 4rem;
+    }
+
     &__inputIcon {
         margin-left: 10rem;
         display: flex;
@@ -29,12 +49,34 @@
         border-radius: .4rem;
         color: $color-gray-text;
         background-color: white;
+
+        @include respond(cetvrta) {
+            margin-left: 0rem;
+            padding: .8rem;
+        }
+        @include respond(sedma) {
+            padding: .6rem;
+        }
+        @include respond(dvanaesta) {
+            padding: .4rem;
+        }
+
         
         &>i {
             font-size: 1.4rem;
             color: $color-gray-text;
             margin-right: .5rem;
             background-color: transparent;
+            @include respond(sedma) {
+                font-size: 1rem;
+            }
+            @include respond(deseta) {
+                margin-right: .1rem;
+                font-size: .7rem;
+            }
+            @include respond(dvanaesta) {
+                padding: .5rem;
+            }
         }
 
         &>input {
@@ -44,6 +86,15 @@
             height: 80%;
             font-size: 1rem;
             background-color: transparent;
+            @include respond(sedma) {
+                font-size: 1rem;
+            }
+            @include respond(deseta) {
+                font-size: .8rem;
+            }
+            @include respond(dvanaesta) {
+                padding: .5rem;
+            }
         }
     }
 
@@ -58,6 +109,22 @@
         color: $color-gray-text;
         font-size: 1.4rem;
         cursor: pointer;
+
+        @include respond(cetvrta) {
+            margin-right: 0rem;
+        }
+        @include respond(sedma) {
+            font-size: 1rem;
+        }
+        @include respond(deseta) {
+            font-size: .8rem;
+        }
+        @include respond(sedma) {
+            padding: .6rem;
+        }
+        @include respond(deseta) {
+            padding: .4rem;
+        }
     }
 }
 
@@ -82,6 +149,33 @@
 .parent {
     width: 86%;
     margin: 5rem auto;
+    @include respond(druga) {
+        width: 70%;
+    }
+    @include respond(druga) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-row-gap: 3rem;
+    }
+    @include respond('1100') {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-row-gap: 3rem;
+    }
+    @include respond(cetvrta) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-row-gap: 2rem;
+        width: 20rem;
+    }
+    @include respond(sedma) {
+        width: 10rem;
+        grid-row-gap: 2rem;
+    }
+    @include respond(peta) {
+        margin: 2rem auto;
+        grid-row-gap: 1rem;
+    }
 }
 
 .card {
@@ -90,6 +184,30 @@
     border-radius: 1rem;
     background-color: transparent;
     cursor: pointer;
+    @include respond('1650') {
+        width: 18rem;
+        height: 23rem;
+    }
+    @include respond('1500') {
+        width: 16rem;
+        height: 21rem;
+    }
+    @include respond('1350') {
+        width: 14rem;
+        height: 19rem;
+    }
+    @include respond('1100') {
+        width: 20rem;
+        height: 25rem;
+    }
+    @include respond(peta) {
+        width: 20rem;
+        height: 25rem;
+    }
+    @include respond(sedma) {
+        width: 10rem;
+        height: 14rem;
+    }
 }
 
 .cardDark {
@@ -116,6 +234,11 @@
         margin-top: 1rem;
         margin-left: 2rem;
         font-size: 1.3rem;
+        @include respond(sedma) {
+            margin-top: .2rem;
+            margin-left: .4rem;
+            font-size: .9rem;
+        }
     }
 }
 

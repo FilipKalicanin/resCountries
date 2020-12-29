@@ -1,6 +1,37 @@
+.flexContainerSecond {
+    width: 100%;
+    height: 10vh;
+    color: $color-black-text;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 5rem;
+    @include respond(sesta) {
+        margin-top: 2rem;
+    }
+    @include respond(sedma) {
+        margin-top: 1rem;
+    }
+    @include respond(deseta) {
+        margin-top: .8rem;
+    }
+}
+
 .buttonBack {
 
     margin-left: 10rem;
+    @include respond(peta) {
+        margin-left: 4rem;
+    }
+    @include respond(sesta) {
+        margin-left: 3rem;
+    }
+    @include respond(sedma) {
+        margin-left: 1rem;
+    }
+    @include respond(deseta) {
+        margin-left: .2rem;
+    }
 
     &__btnBack {
         width: 15rem;
@@ -12,6 +43,30 @@
         background-color: transparent;
         font-size: 1.6rem;
         cursor: pointer;
+
+        @include respond('1350') {
+            padding: .7rem 0 .7rem 0;
+            width: 13rem;
+        }
+        @include respond('1100') {
+            padding: .5rem 0 .5rem 0;
+            width: 11rem;
+        }
+        @include respond(sesta) {
+            padding: .3rem 0 .3rem 0;
+            width: 9rem;
+            font-size: 1.3rem;
+        }
+        @include respond(deseta) {
+            padding: .2rem 0 .2rem 0;
+            width: 7rem;
+            font-size: .9rem;
+        }
+        @include respond(jedanaesta) {
+            padding: .1rem 0 .1rem 0;
+            width: 5rem;
+            font-size: .7rem;
+        }
 
         &>i {
             margin-right: 1rem;
@@ -31,15 +86,48 @@
     }
 }
 
-.editGrid {
-    width: 82%;
-    margin: 0 auto;
-}
+// .editGrid {
+//     width: 82%;
+//     margin: 0 auto;
+// }
 
 .card-secondPage {
     width: 45rem;
     height: 30rem;
     border-radius: .4rem;
+
+    @include respond('1650') {
+        width: 40rem;
+        height: 25rem;
+    }
+    @include respond('1500') {
+        width: 35rem;
+        height: 25rem;
+    }
+    @include respond('1350') {
+        width: 30rem;
+        height: 20rem;
+    }
+    @include respond(druga) {
+        width: 25rem;
+        height: 20rem;
+    }
+    @include respond('1100') {
+        width: 23rem;
+        height: 20rem;
+    }
+    @include respond(treca) {
+        width: 20rem;
+        height: 20rem;
+    }
+    @include respond(peta) {
+        width: 30rem;
+        height: 20rem;
+    }
+    @include respond(sesta) {
+        width: 25rem;
+        height: 20rem;
+    }
 
     &__flag{
         width: 100%;
@@ -58,6 +146,21 @@
     font-weight: bold;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    @include respond('1350') {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
+    }
+    @include respond(druga) {
+        font-size: 1.6rem;
+        margin-bottom: 1.1rem;
+        margin-top: 1.1rem;
+    }
+    @include respond('1100') {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
 }
 
 .list{
@@ -72,6 +175,13 @@
         flex: 0 0 50%;
         margin-bottom: .7rem;
         font-size: 1.2rem;
+        @include respond('1350') {
+            margin-bottom: .6rem;
+            font-size: .8rem;
+        }
+        @include respond(druga) {
+            margin-bottom: .5rem;
+        }
     }
 
 }
@@ -86,6 +196,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    @include respond('1350') {
+        font-size: .9rem;
+    }
 
 }
 
@@ -97,6 +210,14 @@
     border: 1px solid $color-gray-text;
     border-radius: .4rem;
     cursor: pointer;
+    @include respond('1350') {
+        font-size: .8rem;
+        padding: .1rem .1rem;
+    }
+    @include respond(druga) {
+        font-size: .8rem;
+        padding: .1rem .1rem;
+    }
 
     &:hover{
         transform: scale(1.1);

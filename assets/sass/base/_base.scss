@@ -19,22 +19,37 @@ html {
         font-size: 62,5%;
     }
     @include respond(druga) {
-        font-size: 60%;
+        font-size: 62,5%;
     }
     @include respond(treca) {
-        font-size: 58%;
+        font-size: 62,5%;
     }
     @include respond(cetvrta) {
-        font-size: 56%;
+        font-size: 62,5%;
     }
     @include respond(peta) {
-        font-size: 54%;
+        font-size: 62,5%;
     }
     @include respond(sesta) {
-        font-size: 52%;
+        font-size: 62,5%;
     }
     @include respond(sedma) {
-        font-size: 50%;
+        font-size: 62,5%
+    }
+    @include respond(osma) {
+        font-size: 62,5%
+    }
+    @include respond(deveta) {
+        font-size: 62,5%
+    }
+    @include respond(deseta) {
+        font-size: 62,5%
+    }
+    @include respond(jedanaesta) {
+        font-size: 62,5%
+    }
+    @include respond(dvanesta) {
+        font-size: 62,5%
     }
 }
 
